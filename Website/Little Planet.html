@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Little Planet</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href = "#"></a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a> Projects</a>
+								<ul>
+									<li><a href="Project IJslander.html">Project IJslander</a></li>
+									<li><a href="Baby Boom.html">Baby Boom</a></li>
+									<li><a href="Little Planet.html">Little Planet</a></li>
+									<li><a href="The Stack.html">The Stack</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Little Planet</h2>
+							<p>A fast-paced minigame made in 6 hours.</p>
+						</header>
+
+						<!-- Content -->
+							<section id="content">
+								<a class="image fit"><img src="images/LittlePlanetGIF01.gif"/></a>
+								<h3>The Project itself</h3>
+								<p>I got the idea to do this project from a well-known youtuber that goes by the name "Brackeys". I noticed that he submitted a game for the Ludum-dare called "Shrinking planet".
+								The concept was very interesting and involved mechanics that I haven't used before. I decided that I wanted to test my skills at making this game in a very limited amount of time.
+								The Ludum-dare has a 24 hour limit, but since I didn't need any time for the concepting I wanted to do it faster. Starting with the planning board I had a good idea of what needed to be done and how time needed to be spend.
+								This was definitely one of my favourite projects since I learned how to deal with time-stress and still deliver a good product.</p>
+								
+								<h3>The planet</h3>
+								<p>Making the planet was the easy part. I started off with a colored and made a script that shrinks it over time and limits it at a minimum size. Afterwards I added a UI element visually displaying the size of the planet.
+								Additionally I came up with a score system that would increase faster the longer the player survived.</p>
+								
+								<h3> The gravity</h3>
+								<p>The gravity was one of the more complex systems. I needed to come up with a system that would pull certain objects towards it's center based on the distance it was from it's pivot. I ended up with a system that works perfectly fine for this project that felt really smooth.
+								</p>
+								<a class="image fit-xsmall"><img src="images/LittlePlanetScreenshot02.png" /></a>
+								<h3> The Car </h3>
+								<p> The Player plays as a car. The driving mechanic of the car was quite a challenge to overcome. It turns out it's not that easy to make a realistic car that drives on a round surface without any jittering. At first I had the idea of giving the player the ability to acelerate and decelerate and rewarding the player for going faster by adding more score.
+								This turned out to not work so well since the gameplay would become very boring if the player was just driving at minimum speed since the meteors would rarely hit the player. 
+								I ended up giving the car a static speed that was relatively high to create a more fast-paced gamestyle which required the player to pay close attention to what was happening.
+								
+								<h3> The meteors</h3>
+								<p>The meteor spawning and functionality were the most enjoyable scripts to work on since they required me to learn alot of new things I didn't know before. They also truely added to the gameplay experience and made the game fun to play.
+								This was also one of the first times that I worked with the unity particlesystems and I'm glad with how it turned out. The meteors looked great and fitted into the game really well. 
+								</p>
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

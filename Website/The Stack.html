@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Stack</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href = "#"></a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a>Projects</a>
+								<ul>
+									<li><a href="Project IJslander.html">Project IJslander</a></li>
+									<li><a href="Baby Boom.html">Baby Boom</a></li>
+									<li><a href="Little Planet.html">Little Planet</a></li>
+									<li><a href="The Stack.html">The Stack</a></li>
+								</ul>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>The Stack</h2>
+							<p>A simple mobile game where you build the biggest stack possible.</p>
+						</header>
+
+						<!-- Content -->
+							<section id="content">
+								<h3>The project itself</h3>
+								<p>This project was inspired by the official game "The Stack". The concept is very simple, there's a cube moving along the screen. When you tap the screen the cube will lock it's position. The goal is to try and line up the moving cube and the cube below perfectly. If the moving cube is placed slightly off, the part that doesn't match the position of the piece below will fall off. The next piece will always have the start size of the previous piece meaning that if you misplace a tile, your next tile will be smaller making it harder and harder to place the tiles correctly.
+								 The main part that made me want to make this prototype is the programming behind the game. At first I thought it would be very easy to build the game but in the end it turned out to be quite a challenge.</p>
+								<h3>Moving the pieces</h3>
+								<p>Moving the pieces alongside the screen was the first obstacle. I needed to find a way to efficiently move objects from left to right and back to forth whilst it still felt smooth.
+								I ended up with a relatively simple fuction that smoothly moves the tiles alongside given coordinates.</p>
+								<a class="image fit-xsmall"><img src="images/TheStackScreenshot02.png" /></a>
+								<h3>Placing the pieces</h3>
+								<p>Placing the pieces proved to be one of the harder challenges. Not because I simply had to lock it's position. But because I also had to pass on the information about whether it was placed correctly or not and if not, how big the piece of rubble should be that will fall off the tower.
+								I ended up asking a good friend of mine which is a mastermind when it comes to math. Together we figured out a function that places the tiles and passes on the correct information to the other functions to make the game really come together and feel smooth.</p>
+								<a class="image fit-xsmall"><img src="images/TheStackScreenshot03.png" /></a>
+								<h3>The color scheme</h3>
+								<p>To make the game more interesting I wanted every new piece to have a different color. To do this I made a function that takes an array of colors and interpolates between each one of them to make each change in color gentle.</p>
+								<a class="image fit-xsmall"><img src="images/TheStackScreenshot04.png" /></a>
+								<h3>Creating the rubble</h3>
+								<p>Whenever a piece was slightly misplaced a piece of rubble needed to be spawned which has the size of the part of the piece that was misplaced. This ended up not being so hard to do since the main function with all the parameters was already made. </p>
+								<a class="image fit-xsmall"><img src="images/TheStackScreenshot05.png" /></a>
+							
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
