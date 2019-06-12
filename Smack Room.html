@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Smack Room</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href = "#"></a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a>Projects</a>
+								<ul>
+									<li><a href="Project IJslander.html">Project IJslander</a></li>
+									<li><a href="Baby Boom.html">Baby Boom</a></li>
+									<li><a href="Little Planet.html">Little Planet</a></li>
+									<li><a href="Smack Room.html"> Smack Room</a></li>
+								</ul>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Smack Room</h2>
+							<p>a VR based Online Multiplayer Dungeoncrawler developed for the HTC Vive</p>
+						</header>
+
+						<!-- Content -->
+							<section id="content">
+								<h3>The Project itself</h3>
+								<p>Smack room is a VR dungeon crawler inspired by another VR game called Rec Room. You have the option to play on your own or in a party. There are 3 levels to choose from which all have their own unique mechanics featured within them.
+								   In order to win the player(s) have to clear all enemies within the levels with weapons chosen from a large weapon arsenal at the start of each level.</p>
+								<a href="#" class="image fit"><img src="images/SmackRoomScreenshot02.jpg" alt="" /></a>
+								<h3> My contribution to the project</h3>
+								<ol>									
+									<li> Modular weapon behaviour class</li>
+									<li> Weapon implementation </li>
+									<li> Player movement</li>
+								</ol>	
+								<a class="image fit main"><img src="images/SmackRoomScreenshot03.jpg" /></a>
+								<h3>Modular weapon behaviour class</h3>
+								<p>In order to implement weapons efficiently we needed a base class with all essential information that weapons could inherit from in order to keep our code structure clean and simple.
+								   I achieved this by created a main class with essential information that any weapon could use regardless of it's type. Every weapon uses this template and builds further on it to make every weapon have it's own unique function and mechanics. </p>
+								<a class="image fit main"><img src="images/SmackRoomScreenshot04.jpg" /></a>
+								<h3>Weapon implementation</h3>
+								<p>Every weapon is different and should feel different to use. To do this we made a few classes that would use the base template as a foundation to build on. We added a few unique variables to each of these classes. For example how ranged weapons would work. How explosive weapons would work and how melee weapons should function.
+								   With these scripts it was very easy to implement new weapons by simply adding the script to them and setting the variables.</p>
+								<a class="image fit main"><img src="images/SmackRoomScreenshot06.png" /></a>
+								<h3>Player Movement</h3>
+								<p>Because we were using Photon for networking we had to sync all variables that would need to be visible to other players such as position, rotation and scale for example.
+								   This proved to be quite a challenge at the start of the project as it was a new way of programming. With our lead-programmer we created a system that synced all movement and animations in multiplayer.</p>
+								<a class="image fit main"><img src="images/SmackRoomScreenshot07.png" /></a>
+								
+							
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">				
+					<ul class="icons">					
+						<li><a href="" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
